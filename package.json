@@ -1,0 +1,16 @@
+{
+  "name": "fantasy",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattborn/fantasy.git"
+  },
+  "author": "Matt Born <me+code@mattborn.com>",
+  "license": "MIT",
+  "homepage": "http://mattborn.github.io/fantasy",
+  "dependencies": {
+    "cheerio": "latest",
+    "express": "latest",
+    "request": "latest"
+  }
+}
