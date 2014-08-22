@@ -1,13 +1,15 @@
-var cheerio = require('cheerio'),
+var _ = require('lodash'),
+	cheerio = require('cheerio'),
 	express = require('express'),
 	fs = require('fs'),
 	request = require('request'),
-	app = express();
+	app = express(),
+	espn_rankings = require('./espn_rankings'),
+	fantasypros_rankings = require('./fantasypros_rankings');
 
-app.get('/', function (req, res) {
+app.use(express.static(__dirname + '/public'));
 
-  res.send('Fantasy begins now.');
-
-});
+app.use(espn_rankings);
+app.use(fantasypros_rankings);
 
 app.listen('1985');
