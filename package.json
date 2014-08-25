@@ -13,5 +13,15 @@
     "express": "latest",
     "lodash": "latest",
     "request": "latest"
+  },
+  "devDependencies": {
+    "assemble": "latest",
+    "assemble-contrib-permalinks": "latest",
+    "grunt": "latest",
+    "grunt-concurrent": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-nodemon": "latest",
+    "grunt-sass": "latest",
+    "node-bourbon": "latest"
   }
 }
