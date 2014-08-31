@@ -1,6 +1,6 @@
 {
   "name": "fantasy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/mattborn/fantasy.git"
@@ -17,11 +17,16 @@
   "devDependencies": {
     "assemble": "latest",
     "assemble-contrib-permalinks": "latest",
+    "backbone": "latest",
     "grunt": "latest",
     "grunt-concurrent": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-nodemon": "latest",
     "grunt-sass": "latest",
+    "jquery": "latest",
+    "moment": "latest",
     "node-bourbon": "latest"
   }
 }

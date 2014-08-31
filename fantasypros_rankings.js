@@ -22,9 +22,9 @@ app.get('/rankings/fantasypros', function (req, res) {
 				var data = $(row),
 					player = {};
 
-				player.rank = data.children().first().text();
+				player.fp_rank = data.children().first().text();
 				player.name = data.children().eq(1).children().first().text();
-				player.position = data.children().eq(2).text();
+				player.fp_position = data.children().eq(2).text();
 
 				json.push(player);
 			});
