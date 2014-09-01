@@ -1,3 +1,5 @@
 node_modules
 *.json
 public
+config.js
+data
