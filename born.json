@@ -1,0 +1,62 @@
+[
+	{
+		"name": "Andrew Luck",
+		"position": "QB",
+		"team": "IND"
+	},
+	{
+		"name": "Peyton Manning",
+		"position": "QB",
+		"team": "DEN"
+	},
+	{
+		"name": "DeMarco Murray",
+		"position": "RB",
+		"team": "DAL"
+	},
+	{
+		"name": "Marshawn Lynch",
+		"position": "RB",
+		"team": "SEA"
+	},
+	{
+		"name": "Antonio Brown",
+		"position": "WR",
+		"team": "PIT"
+	},
+	{
+		"name": "Demaryius Thomas",
+		"position": "WR",
+		"team": "DEN"
+	},
+	{
+		"name": "Jimmy Graham",
+		"position": "TE",
+		"team": "NO"
+	},
+	{
+		"name": "Rob Gronkowski",
+		"position": "TE",
+		"team": "NE"
+	},
+	{
+		"name": "Eagles D/ST",
+		"position": "D/ST",
+		"team": "PHI"
+	},
+	{
+		"name": "Dolphins D/ST",
+		"position": "D/ST",
+		"team": "MIA"
+	},
+	{
+		"name": "Stephen Gostkowski",
+		"position": "K",
+		"team": "NE"
+	},
+	{
+		"name": "Adam Vinatieri",
+		"position": "K",
+		"team": "IND"
+	}
+]
