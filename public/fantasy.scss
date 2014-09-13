@@ -1,0 +1,40 @@
+@import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css";
+
+//  Reset
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+body,
+p { margin: 0; }
+
+button {
+	background: 0;
+	border: 0;
+	color: inherit;
+	cursor: pointer;
+	font: inherit;
+	letter-spacing: inherit;
+	margin: 0;
+	overflow: visible;
+	padding: 0;
+	text-align: inherit;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	transition: .3s;
+}
+
+[hidden] { display: none; }
+
+//  Gist
+
+html,
+body { height: 100%; }

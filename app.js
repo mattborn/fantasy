@@ -3,9 +3,10 @@ var _ = require('lodash'),
 	express = require('express'),
 	fs = require('fs'),
 	request = require('request'),
-	app = express(),
 	espn_rankings = require('./espn_rankings'),
 	fantasypros_rankings = require('./fantasypros_rankings');
+
+var app = module.exports = express();
 
 app.use(express.static(__dirname + '/public'));
 

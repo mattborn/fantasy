@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Real-time Fantasy Draft Assistant</title>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/sass.js/0.4.0/sass.min.js"></script>
+		<script>
+			$.get('fantasy.scss').done(function (sass) {
+				var css = Sass.compile(sass);
+				$('<style>').html(css).appendTo('head');
+			});
+		</script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.0/react-with-addons.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.0/JSXTransformer.js"></script>
+		<script type="text/jsx">
+			/** @jsx React.DOM */
+
+			var Players = Backbone.Collection.extend({
+				url: 'rankings-fantasypros.json',
+				parse: function (r) {
+					console.log('fantasypros', r);
+					return r;
+				}
+			});
+
+			var Player = React.createClass({
+				
+				render: function () {
+					return (
+						<div className="player"></div>
+					);
+				}
+
+			});
+
+			var App = React.createClass({
+
+				getInitialState: function () {
+					return {};
+				},
+
+				componentWillMount: function () {
+					this.props.players.fetch();
+				},
+
+				render: function () {
+
+					console.log(this.state.players);
+
+					// _.each(, function (p) {
+					// 	console.log(p);
+					// 	// return <Player model={p.model} />
+					// });
+
+					return (
+<div className="fantasy">Test</div>
+					);
+				}
+
+			});
+
+			React.renderComponent(<App players={new Players} />, document.body);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
