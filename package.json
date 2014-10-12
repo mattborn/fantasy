@@ -1,6 +1,6 @@
 {
   "name": "fantasy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/mattborn/fantasy.git"
@@ -12,7 +12,9 @@
     "cheerio": "latest",
     "express": "latest",
     "lodash": "latest",
-    "request": "latest"
+    "request": "latest",
+    "tough-cookie": "latest",
+    "zombie": "latest"
   },
   "devDependencies": {
     "assemble": "latest",
